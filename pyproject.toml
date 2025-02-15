@@ -1,0 +1,17 @@
+[project]
+name = "poetry-commerce"
+version = "skip"
+description = "skip"
+authors = [
+    {name = "Pavel Bobrov"}
+]
+license = {text = "skip"}
+readme = "README.md"
+requires-python = "skip"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

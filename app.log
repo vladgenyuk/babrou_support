@@ -1,0 +1,88 @@
+2025-02-14 15:28:33,736 - my_logger - ERROR - Rollback session: [Errno -3] Temporary failure in name resolution
+2025-02-14 15:30:11,629 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:30:11,645 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:30:20,484 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:30:23,782 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:30:56,171 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:31:54,638 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:40:30,220 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'dirt'
+2025-02-14 15:43:49,796 - my_logger - ERROR - Rollback session: 'sqlalchemy.cyextension.collections.IdentitySet' object is not callable
+2025-02-14 15:44:27,480 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:44:38,129 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:44:45,700 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:44:49,562 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:44:51,831 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:45:00,619 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:45:00,822 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:45:05,569 - my_logger - ERROR - Rollback session: When initializing mapper Mapper[Order(orders)], expression 'OrderProduct' failed to locate a name ('OrderProduct'). If this is a class name, consider adding this relationship() to the <class 'app.models.orders.Order'> class after both dependent classes have been defined.
+2025-02-14 15:47:39,736 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:47:50,051 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:47:50,237 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:47:54,967 - my_logger - ERROR - Rollback session: When initializing mapper Mapper[Product(products)], expression 'OrderProduct' failed to locate a name ('OrderProduct'). If this is a class name, consider adding this relationship() to the <class 'app.models.products.Product'> class after both dependent classes have been defined.
+2025-02-14 15:48:18,867 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:48:26,163 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:48:26,339 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:48:30,053 - my_logger - ERROR - Rollback session: Mapper 'Mapper[OrdersProducts(orders_products)]' has no property 'order'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-02-14 15:50:10,508 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:50:16,671 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:50:16,774 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:50:21,122 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 15:56:58,359 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:56:58,471 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:57:02,998 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:57:03,100 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:57:54,605 - my_logger - ERROR - Rollback session: Unable to apply constraint 'max_length' to supplied value 2
+2025-02-14 15:57:56,757 - my_logger - ERROR - Rollback session: Unable to apply constraint 'max_length' to supplied value 2
+2025-02-14 16:02:56,479 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: 2 (expected str, got int)
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Iphone 11', 2, 1, 0)]
+(Backgro
+2025-02-14 16:03:33,019 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:03:33,133 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:06:43,787 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:06:43,902 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:07:22,052 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: 1 (expected str, got int)
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('string', 1, 1, 1)]
+(Background
+2025-02-14 16:11:33,934 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:12:18,023 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:12:45,423 - my_logger - ERROR - Rollback session: module 'app.crud.order_product' has no attribute 'create'
+2025-02-14 16:17:38,552 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $3: 100 (expected str, got int)
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::VARCHAR) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 100)]
+(Backgr
+2025-02-14 16:18:32,865 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:21:49,614 - my_logger - ERROR - Rollback session: 'dict' object has no attribute 'model_dump'
+2025-02-14 16:25:48,079 - my_logger - ERROR - Rollback session: 4 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+  {'type': 'model_attributes_type', 'loc': ('response', 1), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+  {'type': 'model_attributes_type', 'loc': ('response', 2), 'msg': 'Input should be a valid dictionary or object to extract
+2025-02-14 16:26:45,662 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-14 16:27:50,739 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:28:25,143 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-14 16:28:55,339 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:29:05,591 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:29:05,714 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:29:08,413 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:29:08,514 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:29:33,703 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-14 16:31:04,840 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:32:27,189 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-14 16:56:11,255 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:57:53,953 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:58:09,983 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:58:58,689 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 09:20:27,700 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 09:20:37,928 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 09:20:38,078 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 09:22:15,201 - my_logger - ERROR - Rollback session: [Errno 111] Connect call failed ('127.0.0.1', 5432)
+2025-02-15 09:22:18,930 - my_logger - ERROR - Rollback session: [Errno 111] Connect call failed ('127.0.0.1', 5432)
