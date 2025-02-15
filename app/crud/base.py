@@ -41,7 +41,6 @@ class CrudBase(Generic[M, S]):
     async def delete(self, session: AsyncSession, id: int) -> S | None:
         stmt = delete(self.model).where(self.model.id == id).returning(self.model)
         result = await self.execute_get_one(session, stmt)
-
         return self.schema.model_validate(result) if result else None
 
     async def update(self, session: AsyncSession, id: int, update_obj: S) -> S | None:
@@ -56,9 +55,10 @@ class CrudBase(Generic[M, S]):
 
     async def batch_create(self, session: AsyncSession, create_objs: list[S]):
         create_dicts = [obj.model_dump() for obj in create_objs]
-        stmt = insert(self.model).values(create_dicts).returning(True)
-        result = await session.execute(stmt)
-        return result.scalars().all() if result else None
+        print(create_dicts)
+        stmt = insert(self.model).values(create_dicts)
+        await session.execute(stmt)
+        return None
 
     async def batch_delete(self, session: AsyncSession, ids: list[int]):
         stmt = delete(self.model).where(self.model.id.in_(ids)).returning(True)

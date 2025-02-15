@@ -1,3 +1,5 @@
+from typing import List
+
 from fastapi import Request
 
 from app.crud import product_crud
@@ -37,7 +39,7 @@ class ProductRouter(BaseRouter):
     async def update(self, request: Request, id: int, update_obj: ProductSchema) -> ProductSchema:
         return await super().update(request, id, update_obj)
 
-    async def batch_create(self, request: Request, create_objs: list[ProductSchemaCreate]) -> list[ProductSchema]:
+    async def batch_create(self, request: Request, create_objs: List[ProductSchemaCreate]) -> None:
         return await super().batch_create(request, create_objs)
 
     async def batch_delete(self, request: Request, ids: list[int]) -> list[int]:

@@ -10,8 +10,8 @@ class Product(Base):
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     created_at: Mapped[TIMESTAMP | None] = mapped_column(TIMESTAMP, nullable=True, default=func.now())
     product_name: Mapped[str | None] = mapped_column(String(100), nullable=True)
-    price: Mapped[int | None] = mapped_column(DECIMAL(15, 2), nullable=True)
-    cost: Mapped[int | None] = mapped_column(DECIMAL(15, 2), nullable=True)
+    price: Mapped[float | None] = mapped_column(DECIMAL(15, 2), nullable=True)
+    cost: Mapped[float | None] = mapped_column(DECIMAL(15, 2), nullable=True)
     stock: Mapped[int | None] = mapped_column(Integer, nullable=True)
 
     orders_products = relationship("OrdersProducts", back_populates="products")

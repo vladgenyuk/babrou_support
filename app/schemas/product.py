@@ -7,8 +7,8 @@ from .base import BaseSchema
 
 class ProductSchemaCreate(BaseSchema):
     product_name: str | None = Field(None, max_length=100)
-    price: int | None = Field(None, ge=0)
-    cost: int | None = Field(None, ge=0)
+    price: float | None = Field(None, ge=0)
+    cost: float | None = Field(None, ge=0)
     stock: int | None = Field(None, ge=0)
 
 

@@ -86,3 +86,75 @@
 2025-02-15 09:20:38,078 - my_logger - DEBUG - No changes, no need to commit.
 2025-02-15 09:22:15,201 - my_logger - ERROR - Rollback session: [Errno 111] Connect call failed ('127.0.0.1', 5432)
 2025-02-15 09:22:18,930 - my_logger - ERROR - Rollback session: [Errno 111] Connect call failed ('127.0.0.1', 5432)
+2025-02-15 10:46:21,093 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 10:46:57,953 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 10:53:05,174 - my_logger - ERROR - Rollback session: [Errno 111] Connect call failed ('127.0.0.1', 5432)
+2025-02-15 10:55:11,426 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:05:26,602 - my_logger - ERROR - Rollback session: 'dict' object has no attribute 'model_dump'
+2025-02-15 11:05:53,077 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:07:18,496 - my_logger - ERROR - Rollback session: 'dict' object has no attribute 'model_dump'
+2025-02-15 11:08:30,133 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 11:08:42,359 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 11:08:53,743 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 11:12:33,683 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:14:24,808 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:20:47,908 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:22:45,686 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:23:51,595 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:24:04,814 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:24:10,625 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:24:12,306 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:24:21,224 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:24:26,658 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:24:31,819 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:25:46,622 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:28:31,985 - my_logger - ERROR - Rollback session: 'ProductSchemaCreate' object has no attribute 'model'
+2025-02-15 11:30:45,553 - my_logger - ERROR - Rollback session: 'ProductSchemaCreate' object has no attribute 'model'
+2025-02-15 11:31:44,157 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:32:52,569 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:33:27,984 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:34:44,217 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:35:05,136 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 11:35:05,255 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 11:35:14,868 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:35:16,060 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:36:33,451 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:38:31,618 - my_logger - ERROR - Rollback session: This result object does not return rows. It has been closed automatically.
+2025-02-15 11:39:13,426 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'list_type', 'loc': ('response',), 'msg': 'Input should be a valid list', 'input': None}
+
+2025-02-15 11:40:01,081 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:40:15,161 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:40:16,229 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 12:14:35,794 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 12:17:06,116 - my_logger - DEBUG - No changes, no need to commit.
