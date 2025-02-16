@@ -158,3 +158,269 @@
 2025-02-15 11:40:16,229 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
 2025-02-15 12:14:35,794 - my_logger - DEBUG - No changes, no need to commit.
 2025-02-15 12:17:06,116 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:11:22,476 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:11:23,037 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:11:26,139 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 09:20:05,770 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:20:06,026 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:21:27,932 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:21:28,166 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:21:52,067 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:21:54,098 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:21:54,353 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:21:59,940 - my_logger - ERROR - Rollback session: FROM expression, such as a Table or alias() object expected, got ~T.
+2025-02-16 09:22:58,955 - my_logger - ERROR - Rollback session: FROM expression, such as a Table or alias() object expected, got ~T.
+2025-02-16 09:24:08,712 - my_logger - ERROR - Rollback session: FROM expression, such as a Table or alias() object expected, got ~T.
+2025-02-16 09:28:08,111 - my_logger - ERROR - Rollback session: FROM expression, such as a Table or alias() object expected, got ~T.
+2025-02-16 09:28:08,348 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:28:08,549 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:28:13,539 - my_logger - ERROR - Rollback session: FROM expression, such as a Table or alias() object expected, got ~T.
+2025-02-16 09:28:14,517 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:28:14,703 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:28:18,079 - my_logger - ERROR - Rollback session: FROM expression, such as a Table or alias() object expected, got ~T.
+2025-02-16 09:28:19,481 - my_logger - ERROR - Rollback session: FROM expression, such as a Table or alias() object expected, got ~T.
+2025-02-16 09:28:19,650 - my_logger - ERROR - Rollback session: FROM expression, such as a Table or alias() object expected, got ~T.
+2025-02-16 09:28:19,959 - my_logger - ERROR - Rollback session: FROM expression, such as a Table or alias() object expected, got ~T.
+2025-02-16 09:28:36,880 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:28:39,774 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:28:39,984 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:29:06,882 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $1: '2023-01-01' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: 
+            WITH sales_data AS (
+                SELECT
+                    op.order_id,
+                    op.product_id,
+                    op.amount,
+                    p.price,
+                    p.cost,
+                    o.crea
+2025-02-16 09:30:46,789 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'list_type', 'loc': ('response',), 'msg': 'Input should be a valid list', 'input': {'total_revenue': None, 'total_profit': None, 'total_units_sold': None, 'total_returns': 0}}
+
+2025-02-16 09:30:53,904 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:30:54,070 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:34:31,029 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:34:31,227 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:34:38,175 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'list_type', 'loc': ('response',), 'msg': 'Input should be a valid list', 'input': {'total_revenue': None, 'total_profit': None, 'total_units_sold': None, 'total_returns': 0}}
+
+2025-02-16 09:36:26,496 - my_logger - ERROR - Rollback session: 3 validation errors:
+  {'type': 'float_type', 'loc': ('response', 'total_revenue'), 'msg': 'Input should be a valid number', 'input': None}
+  {'type': 'float_type', 'loc': ('response', 'total_profit'), 'msg': 'Input should be a valid number', 'input': None}
+  {'type': 'int_type', 'loc': ('response', 'total_units_sold'), 'msg': 'Input should be a valid integer', 'input': None}
+
+2025-02-16 09:37:28,600 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 09:53:43,007 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:53:43,240 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:54:02,864 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 09:54:06,262 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 09:54:07,038 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 09:55:10,461 - my_logger - ERROR - Rollback session: CrudOrder.create_order() missing 1 required positional argument: 'amounts'
+2025-02-16 09:55:18,246 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:55:18,405 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 09:55:24,840 - my_logger - ERROR - Rollback session: CrudOrder.create_order() missing 1 required positional argument: 'amounts'
+2025-02-16 09:57:02,000 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.InvalidTransactionTerminationError'>: invalid transaction termination
+[SQL: 
+            SELECT create_order_with_products(
+                $1, 
+                $2, 
+                $3
+            ) AS order_id;
+        ]
+[parameters: ([1, 2, 3], [10, 20, 30], datetime.datetime(2025, 2, 16, 9, 57, 1, 920011))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2025-02-16 09:58:46,337 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.RaiseError'>: Error creating order: insert or update on table "orders_products" violates foreign key constraint "orders_products_product_id_fkey"
+[SQL: 
+            SELECT create_order_with_products(
+                $1, 
+                $2, 
+                $3
+            ) AS order_id;
+        ]
+[parameters: ([1, 2, 3], [10, 20, 30], datetime.datetime(2025, 2, 16, 9, 58, 4
+2025-02-16 10:03:42,487 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.RaiseError'>: Error creating order: insert or update on table "orders_products" violates foreign key constraint "orders_products_product_id_fkey"
+[SQL: 
+            SELECT create_order_with_products(
+                $1, 
+                $2, 
+                $3
+            ) AS order_id;
+        ]
+[parameters: ([1, 2, 3], [10, 20, 30], datetime.datetime(2025, 2, 16, 10, 3, 4
+2025-02-16 10:07:21,177 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.RaiseError'>: Error creating order: insert or update on table "orders_products" violates foreign key constraint "orders_products_product_id_fkey"
+[SQL: 
+            SELECT create_order_with_products(
+                $1, 
+                $2, 
+                $3
+            ) AS order_id;
+        ]
+[parameters: ([1, 2, 3], [10, 20, 30], datetime.datetime(2025, 2, 16, 10, 7, 2
+2025-02-16 10:08:58,546 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.RaiseError'>: Error creating order: insert or update on table "orders_products" violates foreign key constraint "orders_products_product_id_fkey"
+[SQL: 
+            SELECT create_order_with_products(
+                $1, 
+                $2, 
+                $3
+            ) AS order_id;
+        ]
+[parameters: ([1, 2, 3], [10, 20, 30], datetime.datetime(2025, 2, 16, 10, 8, 5
+2025-02-16 10:09:09,605 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.RaiseError'>: Error creating order: Product with ID 1 does not exist.
+[SQL: 
+            SELECT create_order_with_products(
+                $1, 
+                $2, 
+                $3
+            ) AS order_id;
+        ]
+[parameters: ([1, 2, 3], [10, 20, 30], datetime.datetime(2025, 2, 16, 10, 9, 9, 601899))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2025-02-16 10:09:16,609 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 10:09:20,626 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 10:09:21,086 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 10:09:24,877 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': 2}
+
+2025-02-16 10:10:50,724 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': 3}
+
+2025-02-16 10:12:22,926 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 10:19:10,576 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 10:19:10,753 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 10:19:30,067 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 10:19:30,220 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 10:19:38,380 - my_logger - ERROR - Rollback session: 'coroutine' object has no attribute 'mappings'
+2025-02-16 10:19:59,382 - my_logger - ERROR - Rollback session: 4 validation errors:
+  {'type': 'missing', 'loc': ('response', 'product_ids'), 'msg': 'Field required', 'input': {'order_id': 4, 'order_created_at': datetime.datetime(2025, 2, 16, 10, 12, 22, 879798), 'products': [{'cost': 0.0, 'price': 0.0, 'amount': 10, 'product_id': 1, 'product_name': 'string'}, {'cost': 0.0, 'price': 0.0, 'amount': 20, 'product_id': 2, 'product_name': 'string'}, {'cost': 0.0, 'price': 0.0, 'amount': 30, 'product_id': 3, 'prod
+2025-02-16 10:21:15,928 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 10:21:39,847 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 10:28:44,998 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 10:28:47,221 - my_logger - ERROR - Unexpected error occurred: unconverted data remains: q
+2025-02-16 10:28:47,222 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 14:51:23,571 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 14:51:35,316 - my_logger - ERROR - Unexpected error occurred: password authentication failed for user "pavel"
+2025-02-16 14:51:35,316 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 14:51:52,132 - my_logger - ERROR - Unexpected error occurred: password authentication failed for user "pavel"
+2025-02-16 14:51:52,132 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 14:51:52,542 - my_logger - ERROR - Unexpected error occurred: password authentication failed for user "pavel"
+2025-02-16 14:51:52,542 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 14:51:52,812 - my_logger - ERROR - Unexpected error occurred: password authentication failed for user "pavel"
+2025-02-16 14:51:52,813 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 14:52:14,105 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 14:54:43,021 - my_logger - ERROR - Unexpected error occurred: unconverted data remains: 2
+2025-02-16 14:54:43,022 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 14:54:50,381 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 14:58:57,314 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 14:58:57,446 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 14:59:00,332 - my_logger - ERROR - Validation error occurred: 2 validation errors for OrderSchemaCreate
+product_ids
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x72408695a510>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+amounts
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x72408695a510>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-02-16 14:59:00,332 - my_logger - ERROR - Rollback session: Object of type Order is not JSON serializable
+2025-02-16 15:00:44,240 - my_logger - ERROR - Validation error occurred: 2 validation errors for OrderSchema
+product_ids
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x795318a2a480>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+amounts
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x795318a2a480>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-02-16 15:00:44,240 - my_logger - ERROR - Rollback session: Object of type Order is not JSON serializable
+2025-02-16 15:00:46,188 - my_logger - ERROR - Validation error occurred: 2 validation errors for OrderSchema
+product_ids
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x795318104ef0>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+amounts
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x795318104ef0>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-02-16 15:00:46,189 - my_logger - ERROR - Rollback session: Object of type Order is not JSON serializable
+2025-02-16 15:00:46,751 - my_logger - ERROR - Validation error occurred: 2 validation errors for OrderSchema
+product_ids
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x795318a2b380>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+amounts
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x795318a2b380>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-02-16 15:00:46,751 - my_logger - ERROR - Rollback session: Object of type Order is not JSON serializable
+2025-02-16 15:00:46,940 - my_logger - ERROR - Validation error occurred: 2 validation errors for OrderSchema
+product_ids
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x795318106a80>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+amounts
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x795318106a80>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-02-16 15:00:46,941 - my_logger - ERROR - Rollback session: Object of type Order is not JSON serializable
+2025-02-16 15:00:47,067 - my_logger - ERROR - Validation error occurred: 2 validation errors for OrderSchema
+product_ids
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x7953181046e0>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+amounts
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x7953181046e0>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-02-16 15:00:47,067 - my_logger - ERROR - Rollback session: Object of type Order is not JSON serializable
+2025-02-16 15:00:47,404 - my_logger - ERROR - Validation error occurred: 2 validation errors for OrderSchema
+product_ids
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x79531812c740>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+amounts
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x79531812c740>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-02-16 15:00:47,404 - my_logger - ERROR - Rollback session: Object of type Order is not JSON serializable
+2025-02-16 15:02:48,216 - my_logger - ERROR - Validation error occurred: 2 validation errors for OrderSchema
+product_ids
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x748f0fc1a4b0>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+amounts
+  Field required [type=missing, input_value=<app.models.orders.Order object at 0x748f0fc1a4b0>, input_type=Order]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-02-16 15:02:48,216 - my_logger - ERROR - Rollback session: Object of type Order is not JSON serializable
+2025-02-16 15:03:15,330 - my_logger - ERROR - Unexpected error occurred: 2 validation errors:
+  {'type': 'missing', 'loc': ('response', 0, 'product_ids'), 'msg': 'Field required', 'input': OrderReturnSchema(id=4, created_at=datetime.datetime(2025, 2, 16, 10, 12, 22, 879798))}
+  {'type': 'missing', 'loc': ('response', 0, 'amounts'), 'msg': 'Field required', 'input': OrderReturnSchema(id=4, created_at=datetime.datetime(2025, 2, 16, 10, 12, 22, 879798))}
+
+2025-02-16 15:03:15,330 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 15:03:18,347 - my_logger - ERROR - Unexpected error occurred: 2 validation errors:
+  {'type': 'missing', 'loc': ('response', 0, 'product_ids'), 'msg': 'Field required', 'input': OrderReturnSchema(id=4, created_at=datetime.datetime(2025, 2, 16, 10, 12, 22, 879798))}
+  {'type': 'missing', 'loc': ('response', 0, 'amounts'), 'msg': 'Field required', 'input': OrderReturnSchema(id=4, created_at=datetime.datetime(2025, 2, 16, 10, 12, 22, 879798))}
+
+2025-02-16 15:03:18,347 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 15:03:39,507 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-16 15:07:31,633 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 15:07:45,278 - my_logger - ERROR - Unexpected error occurred: Unable to apply constraint 'gt' to supplied value [1]
+2025-02-16 15:07:45,279 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 15:08:16,941 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 15:08:52,951 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 15:08:58,294 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 15:09:05,594 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 15:14:34,485 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 15:24:16,309 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: datetime.datetime(2025, 2, 16, 14, 24, 1... (can't subtract offset-naive and offset-aware datetimes)
+[SQL: UPDATE products SET id=$1::BIGINT, created_at=$2::TIMESTAMP WITHOUT TIME ZONE, product_name=$3::VARCHAR, price=$4::NUMERIC(15, 2), cost=$5::NUMERIC(15, 2), stock=$6::INTEGER WHERE products.id = $7::BIGINT RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: (1, datetime.datetime(2025, 2, 16, 14, 24, 12, 256000, tzinfo=TzInfo(UTC)), 'string', 0.0, 0.0, 0, 1)]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2025-02-16 15:25:05,560 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(2) already exists.
+[SQL: UPDATE products SET id=$1::BIGINT, created_at=$2::TIMESTAMP WITHOUT TIME ZONE, product_name=$3::VARCHAR, price=$4::NUMERIC(15, 2), cost=$5::NUMERIC(15, 2), stock=$6::INTEGER WHERE products.id = $7::BIGINT RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: (2, datetime.datetime(2025, 2, 16, 14, 24, 12, 256000), 'string', 0.0, 0.0, 1000, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-16 15:25:24,018 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(2) already exists.
+[SQL: UPDATE products SET id=$1::BIGINT, created_at=$2::TIMESTAMP WITHOUT TIME ZONE, product_name=$3::VARCHAR, price=$4::NUMERIC(15, 2), cost=$5::NUMERIC(15, 2), stock=$6::INTEGER WHERE products.id = $7::BIGINT RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: (2, datetime.datetime(2025, 2, 16, 14, 24, 12, 256000), 'string2', 0.0, 0.0, 1000, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-16 15:26:23,900 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(2) already exists.
+[SQL: UPDATE products SET id=$1::BIGINT, created_at=$2::TIMESTAMP WITHOUT TIME ZONE, product_name=$3::VARCHAR, price=$4::NUMERIC(15, 2), cost=$5::NUMERIC(15, 2), stock=$6::INTEGER WHERE products.id = $7::BIGINT RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: (2, datetime.datetime(2025, 2, 16, 14, 24, 12, 256000), 'string2', 0.0, 0.0, 1000, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-16 15:28:04,284 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "products" violates foreign key constraint "orders_products_product_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(1) is still referenced from table "orders_products".
+[SQL: DELETE FROM products WHERE products.id IN ($1::BIGINT, $2::BIGINT) RETURNING true AS anon_1]
+[parameters: (1, 2)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-16 15:28:23,931 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "products" violates foreign key constraint "orders_products_product_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM products WHERE products.id IN ($1::BIGINT) RETURNING true AS anon_1]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
